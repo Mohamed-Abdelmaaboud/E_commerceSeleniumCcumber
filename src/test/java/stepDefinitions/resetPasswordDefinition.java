@@ -1,6 +1,5 @@
 package stepDefinitions;
 
-import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -12,6 +11,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 //import pages.HomePage;
 import pages.ResetPassword;
+//import test.pages.ResetPassword;
 
 public class resetPasswordDefinition {
     //private HomePage homePage;
@@ -21,7 +21,7 @@ public class resetPasswordDefinition {
     public void openPage(){
         //homePage = new HomePage();
         //homePage.openHomePage();
-        System.setProperty("webdriver.chrome.driver", "chromedriver_linux64 (1)/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver_linux64 (1)/chromedriver");
         driver = new ChromeDriver();
     }
 

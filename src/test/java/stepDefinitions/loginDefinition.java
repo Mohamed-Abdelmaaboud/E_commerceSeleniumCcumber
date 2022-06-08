@@ -7,11 +7,12 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.AfterClass;
 import org.junit.Assert;
-import org.junit.BeforeClass;
+//import org.junit.BeforeClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 //import pages.HomePage;
 import pages.LoginPage;
+//import test.pages.LoginPage;
 
 public class loginDefinition {
     private WebDriver driver;
@@ -19,11 +20,12 @@ public class loginDefinition {
     private LoginPage loginPage;
 
 
-    @BeforeClass
+    @Before
     public void openPage(){
 
-        System.setProperty("webdriver.chrome.driver", "chromedriver_linux64 (1)/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver_linux64 (1)/chromedriver");
         driver = new ChromeDriver();
+        System.out.println("open browser");
     }
     @Given("user is on login page")
     public void user_is_on_login_page(){
@@ -39,12 +41,13 @@ public class loginDefinition {
     @Then("user will be logged Successfully")
     public void user_will_be_logged_Successfully(){
         String expectedResult = driver.getCurrentUrl();
-        Assert.assertEquals(expectedResult,"http://demowebshop.tricentis.com/");
+        Assert.assertEquals(expectedResult,"https://demowebshop.tricentis.com");
     }
 
-   @AfterClass
+   @After
     public void closePage(){
-         driver.close();
+         driver.quit();
+       System.out.println("close browser");
 }
 
 }

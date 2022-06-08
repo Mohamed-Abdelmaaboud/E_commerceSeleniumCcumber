@@ -1,20 +1,17 @@
 package stepDefinitions;
 
-import io.cucumber.java.Before;
-import io.cucumber.java.BeforeStep;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.BeforeMethod;
 //import pages.HomePage;
 import pages.RegisterPage;
+//import test.pages.RegisterPage;
 
 public class registerDefinition {
    private WebDriver driver;
@@ -24,7 +21,7 @@ public class registerDefinition {
 public void openPage(){
     //homePage = new HomePage();
     //homePage.openHomePage();
-    System.setProperty("webdriver.chrome.driver", "chromedriver_linux64 (1)/chromedriver");
+    System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver_linux64 (1)/chromedriver");
     driver = new ChromeDriver();
 }
 

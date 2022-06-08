@@ -1,18 +1,16 @@
 package stepDefinitions;
 
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 //import pages.HomePage;
-import pages.LoginPage;
 import pages.SearchPage;
+//import test.pages.LoginPage;
+//import test.pages.SearchPage;
 
 public class searchDefinition {
     //private LoginPage loginPage;
@@ -23,7 +21,7 @@ public class searchDefinition {
     public void openPage(){
         //homePage = new HomePage();
         //homePage.openHomePage();
-        System.setProperty("webdriver.chrome.driver", "chromedriver_linux64 (1)/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver_linux64 (1)/chromedriver");
        driver=new ChromeDriver();
 
     }

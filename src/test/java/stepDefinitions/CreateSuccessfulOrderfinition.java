@@ -1,6 +1,5 @@
 package stepDefinitions;
 
-import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -26,7 +25,7 @@ public class CreateSuccessfulOrderfinition {
 
        // homePage = new HomePage();
        // homePage.openHomePage();
-        System.setProperty("webdriver.chrome.driver", "chromedriver_linux64 (1)/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver_linux64 (1)/chromedriver");
         driver = new ChromeDriver();
         /*loginPage = new LoginPage(driver);
         loginPage.openLoginPage();

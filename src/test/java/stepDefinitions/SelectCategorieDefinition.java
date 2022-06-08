@@ -1,6 +1,5 @@
 package stepDefinitions;
 
-import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -13,6 +12,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 //import pages.HomePage;
 import pages.LoginPage;
 import pages.SelectCategories;
+//import test.pages.LoginPage;
+//import test.pages.SelectCategories;
 
 public class SelectCategorieDefinition  {
 
@@ -21,11 +22,11 @@ public class SelectCategorieDefinition  {
     //private HomePage homePage;
     private SelectCategories selectCategories;
 
-    @BeforeClass
+    @Before
     public void openPage(){
         //homePage = new HomePage();
         //homePage.openHomePage();
-        System.setProperty("webdriver.chrome.driver", "chromedriver_linux64 (1)/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver_linux64 (1)/chromedriver");
         driver = new ChromeDriver();
     }
 

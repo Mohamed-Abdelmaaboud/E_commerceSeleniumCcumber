@@ -1,6 +1,5 @@
 package stepDefinitions;
 
-import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -11,9 +10,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import pages.AddToCart;
-//import pages.HomePage;
 import pages.LoginPage;
 import pages.SearchPage;
+//import test.pages.AddToCart;
+//import pages.HomePage;
+//import test.pages.LoginPage;
+//import test.pages.SearchPage;
 
 public class addToCartDefinition {
    private AddToCart addToCart;
@@ -27,7 +29,7 @@ public class addToCartDefinition {
 
         //homePage = new HomePage();
        // homePage.openHomePage();
-        System.setProperty("webdriver.chrome.driver", "chromedriver_linux64 (1)/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver_linux64 (1)/chromedriver");
         driver = new ChromeDriver();
 
 
