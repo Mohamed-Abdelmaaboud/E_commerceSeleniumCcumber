@@ -5,18 +5,16 @@ import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.junit.AfterClass;
 import org.junit.Assert;
-//import org.junit.BeforeClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-//import pages.HomePage;
+
 import pages.LoginPage;
-//import test.pages.LoginPage;
+
 
 public class loginDefinition {
     private WebDriver driver;
-    //private HomePage homePage;
+
     private LoginPage loginPage;
 
 

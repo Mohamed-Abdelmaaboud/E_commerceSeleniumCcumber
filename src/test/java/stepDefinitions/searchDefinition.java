@@ -7,29 +7,23 @@ import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-//import pages.HomePage;
 import pages.SearchPage;
-//import test.pages.LoginPage;
-//import test.pages.SearchPage;
+
 
 public class searchDefinition {
-    //private LoginPage loginPage;
+
     private SearchPage searchPage;
-    //private HomePage homePage;
+  ;
     private WebDriver driver ;
     @BeforeClass
     public void openPage(){
-        //homePage = new HomePage();
-        //homePage.openHomePage();
+
         System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver_linux64 (1)/chromedriver");
        driver=new ChromeDriver();
 
     }
     @Given("user is logged in")
     public void user_is_logged_in() {
-       //loginPage=new LoginPage(driver);
-      //  loginPage.openLoginPage();
-       // loginPage.Login();
         searchPage=new SearchPage(driver);
         searchPage.openSearchPage();
 
@@ -48,10 +42,6 @@ public class searchDefinition {
 
 
 
-   /* @AfterClass
-    public void closePage(){
-        driver.close();
-    }*/
 
 }
 

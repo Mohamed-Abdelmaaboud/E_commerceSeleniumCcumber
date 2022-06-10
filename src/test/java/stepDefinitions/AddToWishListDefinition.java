@@ -11,23 +11,15 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import pages.AddToWishList;
 import pages.LoginPage;
 import pages.SearchPage;
-//import test.pages.AddToWishList;
-//import pages.HomePage;
-//import test.pages.LoginPage;
-//import test.pages.SearchPage;
+
 
 public class AddToWishListDefinition {
-//private HomePage homePage;
-private LoginPage loginPage;
-private SearchPage searchPage;
 private AddToWishList addToWishList;
 private WebDriver driver;
 
     @BeforeClass
     public void openPage() {
 
-            //homePage = new HomePage();
-            //homePage.openHomePage();
         System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver_linux64 (1)/chromedriver");
         driver = new ChromeDriver();
     }

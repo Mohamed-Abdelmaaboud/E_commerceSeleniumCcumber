@@ -12,20 +12,17 @@ import org.openqa.selenium.chrome.ChromeDriver;
 //import pages.HomePage;
 import pages.LoginPage;
 import pages.SelectCategories;
-//import test.pages.LoginPage;
-//import test.pages.SelectCategories;
+
 
 public class SelectCategorieDefinition  {
 
     private WebDriver driver;
     private LoginPage loginPage;
-    //private HomePage homePage;
     private SelectCategories selectCategories;
 
     @Before
     public void openPage(){
-        //homePage = new HomePage();
-        //homePage.openHomePage();
+
         System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver_linux64 (1)/chromedriver");
         driver = new ChromeDriver();
     }

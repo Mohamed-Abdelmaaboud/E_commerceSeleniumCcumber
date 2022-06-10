@@ -9,18 +9,16 @@ import org.junit.BeforeClass;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-//import pages.HomePage;
 import pages.ResetPassword;
-//import test.pages.ResetPassword;
+
 
 public class resetPasswordDefinition {
-    //private HomePage homePage;
+
     private ResetPassword setNewPassword;
     WebDriver driver;
     @BeforeClass
     public void openPage(){
-        //homePage = new HomePage();
-        //homePage.openHomePage();
+
         System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver_linux64 (1)/chromedriver");
         driver = new ChromeDriver();
     }

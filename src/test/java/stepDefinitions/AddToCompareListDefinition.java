@@ -19,12 +19,10 @@ private WebDriver driver;
     @BeforeClass
     public void openPage() {
 
-        //homePage = new HomePage();
-        //homePage.openHomePage();
+
         System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver_linux64 (1)/chromedriver");
         driver = new ChromeDriver();
-       // loginPage=new LoginPage(driver);
-       // loginPage.Login();
+
     }
     @Given("logged user want to add a product to compare list")
     public void logged_user_want_to_add_a_product_to_compare_list(){

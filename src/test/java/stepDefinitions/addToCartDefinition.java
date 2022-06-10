@@ -27,8 +27,6 @@ public class addToCartDefinition {
     @BeforeClass
     public void openPage() {
 
-        //homePage = new HomePage();
-       // homePage.openHomePage();
         System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver_linux64 (1)/chromedriver");
         driver = new ChromeDriver();
 

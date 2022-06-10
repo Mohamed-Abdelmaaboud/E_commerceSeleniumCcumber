@@ -40,7 +40,4 @@ public class RegisterPage {
 
 
 
-    //private void idElement(String id){
-        //driver.findElement(By.id(id));
-    //}
 }

@@ -23,17 +23,10 @@ public class CreateSuccessfulOrderfinition {
     @BeforeClass
     public void openPage() {
 
-       // homePage = new HomePage();
-       // homePage.openHomePage();
+
         System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver_linux64 (1)/chromedriver");
         driver = new ChromeDriver();
-        /*loginPage = new LoginPage(driver);
-        loginPage.openLoginPage();
-        loginPage.Login();
-        searchPage = new SearchPage(driver);
-        searchPage.SearchProduct("Blue and green sneaker");
-        addToCart = new AddToCart(driver);
-        addToCart.addProductToCart();*/
+
 
     }
 

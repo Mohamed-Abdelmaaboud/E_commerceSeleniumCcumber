@@ -40,17 +40,12 @@ public class CreateSuccessfulOrder {
     public void openShoppingCart(){
         System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver_linux64 (1)/chromedriver");
         driver = new ChromeDriver();
-      // driver.get("http://demowebshop.tricentis.com/onepagecheckout");
+
        loginPage = new LoginPage(driver);
        loginPage.openLoginPage();
        loginPage.Login();
        driver.findElement(shoppingCart).click();
-        //searchPage = new SearchPage(driver);
-        //searchPage.openSearchPage();
-        //searchPage.SearchProduct("Blue and green sneaker");
-        //addToCart = new AddToCart(driver);
-        //addToCart.searchProduct();
-        //addToCart.addProductToCart();
+
 
 
 
@@ -92,4 +87,3 @@ public class CreateSuccessfulOrder {
        driver.findElement(confirmOrderButton).click();
     }
 }
-////input[@value='Go to cart']
